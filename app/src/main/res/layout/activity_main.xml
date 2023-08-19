@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/inputTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="25sp" />
+
+    <LinearLayout style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/buttonAC"
+            style="@style/buttonNumber"
+            android:onClick="onClear"
+            android:text="AC"
+            android:textColor="@color/red"
+            tools:ignore="UsingOnClickInXml" />
+
+        <ImageButton
+            android:id="@+id/buttonDelete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/baseline_backspace_24" />
+
+        <Button style="@style/buttonNumber" />
+
+        <Button
+            android:id="@+id/buttonDivide"
+            style="@style/buttonOperations"
+            android:onClick="onOperator"
+            tools:ignore="UsingOnClickInXml"
+            android:text="/" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/buttonNumber"
+            android:onClick="onDigit"
+            tools:ignore="UsingOnClickInXml"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/buttonNumber"
+            android:onClick="onDigit"
+            tools:ignore="UsingOnClickInXml"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/buttonNumber"
+            android:onClick="onDigit"
+            tools:ignore="UsingOnClickInXml"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/buttonMultiply"
+            style="@style/buttonOperations"
+            android:onClick="onOperator"
+            tools:ignore="UsingOnClickInXml"
+            android:text="*" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/buttonNumber"
+            android:onClick="onDigit"
+            tools:ignore="UsingOnClickInXml"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/buttonNumber"
+            android:onClick="onDigit"
+            tools:ignore="UsingOnClickInXml"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/buttonNumber"
+            android:onClick="onDigit"
+            tools:ignore="UsingOnClickInXml"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/buttonMinus"
+            style="@style/buttonOperations"
+            android:onClick="onOperator"
+            tools:ignore="UsingOnClickInXml"
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/buttonNumber"
+            android:onClick="onDigit"
+            tools:ignore="UsingOnClickInXml"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/buttonNumber"
+            android:onClick="onDigit"
+            tools:ignore="UsingOnClickInXml"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/buttonNumber"
+            android:onClick="onDigit"
+            tools:ignore="UsingOnClickInXml"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/buttonPlus"
+            style="@style/buttonOperations"
+            android:onClick="onOperator"
+            tools:ignore="UsingOnClickInXml"
+            android:text="+" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <Button
+            android:id="@+id/buttonDot"
+            style="@style/buttonNumber"
+            android:onClick="onDecimalPoint"
+            tools:ignore="UsingOnClickInXml"
+            android:text="." />
+
+        <Button
+            android:id="@+id/button0"
+            style="@style/buttonNumber"
+            android:onClick="onDigit"
+            android:text="0"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/buttonEqual"
+            style="@style/buttonNumber"
+            android:onClick="onEqual"
+            tools:ignore="UsingOnClickInXml"
+            android:layout_weight="2"
+            android:background="@color/orange"
+            android:text="=" />
+    </LinearLayout>
+
+
+</LinearLayout>
